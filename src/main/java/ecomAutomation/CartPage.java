@@ -37,8 +37,9 @@ public class CartPage extends AbstractComponent{
 	
 	
 	
-	public CheckOutPage goToCheckOut()
+	public CheckOutPage goToCheckOut() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		checkout.click();
 		return new CheckOutPage(driver);
 		
