@@ -40,7 +40,6 @@ public class CartPage extends AbstractComponent{
 	public CheckOutPage goToCheckOut() throws InterruptedException
 	{
 		Thread.sleep(2000);
-		System.out.println("Added method to cover delay");
 		checkout.click();
 		return new CheckOutPage(driver);
 		
